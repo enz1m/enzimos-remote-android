@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Quick actions with the selected computer (remote, files, clipboard) and
+     this phone as its second screen, mirrored screen or webcam: one row of
+     round tiles; tiles the computer does not support are hidden. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="6dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <include android:id="@+id/actionRemote" layout="@layout/item_action_tile" />
+        <include android:id="@+id/actionFiles" layout="@layout/item_action_tile" />
+        <include android:id="@+id/actionClipboard" layout="@layout/item_action_tile" />
+        <include android:id="@+id/actionExtend" layout="@layout/item_action_tile" />
+        <include android:id="@+id/actionMirror" layout="@layout/item_action_tile" />
+        <include android:id="@+id/actionWebcam" layout="@layout/item_action_tile" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activeHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginHorizontal="8dp"
+        android:gravity="center"
+        android:textAppearance="?attr/textAppearanceBodySmall"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        android:visibility="gone" />
+</LinearLayout>

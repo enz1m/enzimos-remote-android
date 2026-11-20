@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Regression tests for the receiver log summarizer; no device required."""
+import runpy
+import unittest
+from pathlib import Path
+
+summarize = runpy.run_path(str(Path(__file__).with_name("summarize-receiver-stats")))["summarize"]
+BASE = "receiver_stats fps=60 kbps=4000 loss=0 rtt_ms=2 decode_ms=24 jitter_buffer_ms=0.5"
+
+
+class ReceiverStatsTests(unittest.TestCase):
+    def test_old_logs_do_not_claim_missing_recovery_counters_are_zero(self):
+        result = summarize(BASE)
+        self.assertEqual(result["samples"], 1)
+        self.assertIsNone(result["recovery"]["nacks"])
+
+    def test_recovery_totals_only_count_reported_intervals(self):
+        result = summarize(BASE + " nacks=3 freezes=1 freeze_ms=500\n" + BASE + " nacks=4")
+        self.assertEqual(result["recovery"]["nacks"], {"available_samples": 2, "total": 7})
+        self.assertEqual(result["recovery"]["freezes"], {"available_samples": 1, "total": 1})
+
+    def test_scientific_notation_with_negative_exponent(self):
+        result = summarize(BASE.replace("loss=0", "loss=1.5E-2"))
+        self.assertEqual(result["metrics"]["loss"]["mean"], .015)
+
+    def test_invalid_samples_are_not_used(self):
+        result = summarize(BASE.replace("fps=60", "fps=-1") + "\nreceiver_stats incomplete=true")
+        self.assertEqual(result["samples"], 0)
+
+
+if __name__ == "__main__":
+    unittest.main()

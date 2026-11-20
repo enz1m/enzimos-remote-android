@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">enzimOS Remote</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_resume">Resume</string>
+    <string name="action_stop">Stop</string>
+    <string name="status_connecting">Connecting\u2026</string>
+
+
+    <string name="title_paired_hosts">Paired computers</string>
+    <string name="action_forget">Forget</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="settings_section_video">Video</string>
+    <string name="settings_section_display">Display</string>
+    <string name="settings_section_input">Input</string>
+    <string name="settings_section_about">About</string>
+    <string name="settings_max_bitrate">Max bitrate</string>
+    <string name="settings_max_fps">Max FPS</string>
+    <string name="settings_resolution">Resolution</string>
+    <string name="settings_perf_overlay">Performance overlay</string>
+    <string name="settings_lock_orientation">Lock screen orientation</string>
+    <string name="settings_mobile_gestures">Swipe to scroll, then lift to coast. Hold briefly, then move to drag. Keep holding still for the context menu.</string>
+    <string name="settings_app_cursor">App streams hide the computer cursor. A connected mouse uses the Android pointer. Hold timing follows your system touch-and-hold setting.</string>
+    <string name="settings_scroll_speed">Scroll speed</string>
+    <string name="settings_section_behaviour">Behaviour</string>
+    <string name="settings_auto_reconnect">Auto-reconnect on disconnect</string>
+    <string name="settings_keep_screen_on">Keep screen on during streaming</string>
+    <string name="settings_immersive_mode">System navigation bar during streaming</string>
+    <string name="navigation_hide_until_swipe">Hide until swiped</string>
+    <string name="navigation_always_show">Always show</string>
+    <string name="settings_clear_pairings">Forget all computers</string>
+    <string name="settings_factory_reset">Factory reset</string>
+    <string name="settings_version">Version %1$s (%2$d)</string>
+    <string name="settings_device_id">Device ID: %s</string>
+    <plurals name="settings_paired_count">
+        <item quantity="one">%d paired computer</item>
+        <item quantity="other">%d paired computers</item>
+    </plurals>
+    <string name="settings_cleared">All computers forgotten</string>
+    <string name="settings_reset_done">All data cleared</string>
+
+    <!-- Pairing -->
+    <string name="action_cancel">Cancel</string>
+    <string name="pairing_title">Scan Pairing Code</string>
+    <string name="pairing_connecting">Connecting to host\u2026</string>
+    <string name="pairing_error_camera">Camera permission required for QR scanning</string>
+
+    <!-- Accessibility -->
+    <string name="cd_disconnect">Disconnect</string>
+    <string name="cd_toggle_keyboard">Toggle keyboard</string>
+    <string name="cd_remote_desktop_stream">Remote desktop stream</string>
+    <string name="cd_camera_preview">Camera preview for QR scanning</string>
+
+    <!-- Window switching -->
+    <string name="window_list_title">Switch App</string>
+    <string name="window_list_empty">No windows available</string>
+    <string name="cd_switch_app">Switch app</string>
+
+    <!-- App drawer -->
+    <string name="drawer_running_apps">Running Apps</string>
+    <string name="drawer_launch_app">Launch App</string>
+    <string name="drawer_no_windows">No running windows</string>
+
+    <!-- Stream activity -->
+    <string name="stream_rtt">%dms</string>
+
+    <string name="add_computer">Add a computer</string>
+    <string name="forget_computer">Forget %1$s?</string>
+    <string name="computer_unreachable">Computer unavailable. Check your connection.</string>
+    <string name="resume_app">Open %1$s</string>
+    <string name="close_app">Close</string>
+    <string name="close_named_app">Close %1$s?</string>
+    <string name="close_app_warning">The app will stop on your computer. Unsaved work may be lost.</string>
+    <string name="desktop_control_returned">Control returned to the computer. Use Home to choose an app again.</string>
+    <string name="desktop_session_unavailable">This desktop session is no longer available. Use Home to choose again.</string>
+    <string name="remote_home">Home</string>
+    <string name="show_keyboard">Show keyboard</string>
+    <string name="hide_keyboard">Hide keyboard</string>
+    <string name="dock_home_description">Return to computer home</string>
+    <string name="dock_close_description">Close remote app</string>
+    <string name="settings_compatibility_decoder">Compatibility decoder</string>
+    <string name="settings_compatibility_decoder_hint">Use standard decoding if video glitches. May increase delay. Applies to the next stream.</string>
+    <string name="desktop_title">Desktop</string>
+    <string name="open_desktop">Full desktop</string>
+    <string name="desktop_view_detail">%1$s · %2$d × %3$d</string>
+    <string name="desktop_view_more">%1$s · %2$d more screens</string>
+    <string name="desktop_view_pick">Show which screen?</string>
+    <string name="desktop_view_main">main</string>
+    <string name="home_cpu_history">Processor · last 2 minutes</string>
+    <string name="home_network">↓ %1$s  ↑ %2$s</string>
+    <string name="home_files_short">Files</string>
+    <string name="home_memory_short">%1$s / %2$s</string>
+    <string name="home_storage_short">%1$s free</string>
+    <plurals name="home_threads">
+        <item quantity="one">%d thread</item>
+        <item quantity="other">%d threads</item>
+    </plurals>
+    <string name="desktop_hint">Control the whole desktop in its original layout.</string>
+    <string name="returning_control">Returning control…</string>
+    <string name="input_drain_failed">Some recent input may not have reached the computer.</string>
+
+    <!-- Home (connected computer) -->
+    <string name="home_switch_computer">Switch computer</string>
+    <string name="home_status_online">Connected</string>
+    <string name="home_status_connecting">Connecting…</string>
+    <string name="home_status_offline">Offline</string>
+    <string name="home_status_needs_pairing">Needs pairing</string>
+    <string name="home_offline_title">%1$s is offline</string>
+    <string name="home_offline_body">Make sure it\'s on, awake and on the same network. It will connect automatically when it\'s available.</string>
+    <string name="home_needs_pairing_title">Pair %1$s again</string>
+    <string name="home_needs_pairing_body">This computer no longer recognizes this phone. It may have been unpaired on the computer.</string>
+    <string name="home_pair_again">Pair again</string>
+    <string name="home_try_now">Try now</string>
+    <string name="home_running">Running</string>
+    <string name="home_apps_empty">No apps are installed on this computer yet.</string>
+    <string name="home_processor">Processor</string>
+    <string name="home_memory">Memory</string>
+    <string name="home_storage">Storage</string>
+    <string name="home_uptime">Up %1$s</string>
+    <string name="home_open">Open</string>
+    <string name="home_switch_to">Switch</string>
+    <string name="computer_settings">Computer settings</string>
+    <string name="rename_computer">Rename</string>
+    <string name="rename_computer_title">Rename computer</string>
+    <string name="computer_name_hint">Name</string>
+    <string name="action_save">Save</string>
+    <string name="forget_computer_body">This phone will be removed from %1$s too. You can pair again at any time.</string>
+    <string name="forgot_computer">Forgot %1$s</string>
+    <string name="computers_sheet_title">Your computers</string>
+    <string name="computer_status_line">%1$s · %2$s</string>
+    <string name="computer_last_seen">Last connected %1$s</string>
+
+    <string name="search_apps">Search apps</string>
+    <string name="home_favorites">Favorites</string>
+    <string name="home_all_apps">All apps</string>
+    <string name="home_search_results">Results</string>
+    <string name="home_no_results">No apps match “%1$s”.</string>
+    <string name="home_loading_apps">Loading apps…</string>
+    <string name="app_add_favorite">Add to favorites</string>
+    <string name="app_remove_favorite">Remove from favorites</string>
+    <string name="app_open">Open</string>
+    <string name="app_phone_ready">Adapts to your phone</string>
+    <string name="app_running_label">%1$s, running</string>
+    <string name="favorite_added">%1$s added to favorites</string>
+
+    <!-- Welcome -->
+    <string name="welcome_title">Your computer\'s apps, on your phone</string>
+    <string name="welcome_body">Pair once and your computers stay connected. Open an app and it fits your screen.</string>
+    <string name="welcome_requirements">Turn on Phone Link in your computer\'s Settings.</string>
+
+    <!-- Add computer -->
+    <string name="add_title">Add a computer</string>
+    <string name="add_intro">Make sure the computer is on and connected to the same network as this phone.</string>
+    <string name="add_nearby">Nearby</string>
+    <string name="add_searching">Looking for computers…</string>
+    <string name="add_nothing_found">No computers found yet. Check that the host is running, or use a QR code or address.</string>
+    <string name="add_pair">Pair</string>
+    <string name="add_paired">Paired</string>
+    <string name="add_other_ways">Other ways to connect</string>
+    <string name="add_scan_qr">Scan a QR code</string>
+    <string name="add_scan_qr_hint">Open Phone Link in your computer\'s Settings to find the code</string>
+    <string name="add_manual">Enter an address</string>
+    <string name="add_manual_hint">For computers on another network or VPN</string>
+    <string name="add_manual_title">Computer address</string>
+    <string name="add_manual_field">IP address or name</string>
+    <string name="add_manual_invalid">Enter an address like 192.168.1.20 or 192.168.1.20:9470</string>
+    <string name="add_continue">Continue</string>
+
+    <!-- Pairing dialog -->
+    <string name="pair_connecting_title">Connecting…</string>
+    <string name="pair_approve_title">Approve on %1$s</string>
+    <string name="pair_approve_body">A notification appeared on the computer. Accept it if it shows this code:</string>
+    <string name="pair_cli_hint">No notification? On the computer run: enzremote-signaling approve %1$s</string>
+    <string name="pair_failed_title">Couldn\'t pair</string>
+    <string name="pair_try_again">Try again</string>
+    <string name="pair_code_description">Pairing code %1$s</string>
+    <string name="scan_title">Scan the pairing code</string>
+    <string name="scan_hint">On the computer, open Remote → Add Phone (or run enzremote-signaling pair) and point the camera at the code.</string>
+    <string name="scan_invalid">That isn\'t an enzimOS Remote pairing code.</string>
+    <string name="app_generic_name">The app</string>
+    <string name="app_closed_on_computer">%1$s was closed on the computer.</string>
+    <string name="app_crashed">%1$s stopped unexpectedly on the computer.</string>
+    <string name="app_failed_to_start">%1$s couldn\'t start on the computer.\n\n%2$s</string>
+    <string name="app_settings">App settings</string>
+    <string name="app_settings_named">%1$s settings</string>
+    <string name="percent_value">%1$d%%</string>
+    <string name="app_settings_subtitle">Saved for this app on this computer.</string>
+    <string name="app_settings_input">Input</string>
+    <string name="app_settings_touch">Touch</string>
+    <string name="app_settings_trackpad">Trackpad</string>
+    <string name="app_settings_touch_hint">Tap to click, drag to scroll, hold then drag to move things, long hold for the menu.</string>
+    <string name="app_settings_trackpad_hint">Slide to move the pointer, tap to click, tap then slide to drag, two fingers to scroll, two-finger tap for the menu.</string>
+    <string name="app_settings_size">Interface size</string>
+    <string name="app_settings_shape">Screen shape</string>
+    <string name="app_settings_shape_fill">Fill screen</string>
+    <string name="app_settings_shape_square">Square</string>
+    <string name="app_settings_canvas">The app sees a %1$d × %2$d screen. Smaller sizes give it more room.</string>
+    <string name="app_settings_desktop">The whole desktop keeps its own size.</string>
+    <string name="app_settings_reset">Reset to defaults</string>
+    <string name="share_target_label">Send to computer</string>
+    <string name="share_files_title">Send to which computer?</string>
+    <string name="share_text_title">Copy to which computer?</string>
+    <string name="share_host_offline">%1$s (offline)</string>
+    <string name="share_offline_toast">%1$s is offline. Make sure it is on and on the same network.</string>
+    <string name="share_no_computers">No computers paired</string>
+    <string name="share_no_computers_detail">Pair a computer in enzimOS Remote first, then share again.</string>
+    <string name="share_open_app">Open enzimOS Remote</string>
+    <string name="share_text_sent">Copied to the clipboard on %1$s</string>
+    <string name="share_failed">Could not reach %1$s</string>
+    <plurals name="share_files_sending">
+        <item quantity="one">Sending %1$d file to %2$s</item>
+        <item quantity="other">Sending %1$d files to %2$s</item>
+    </plurals>
+    <string name="transfers_channel">File transfers</string>
+    <string name="transfers_channel_description">Files sent to and received from your computers</string>
+    <string name="transfers_running">Transferring files</string>
+    <string name="transfer_sending">Sending %1$s</string>
+    <string name="transfer_receiving">Receiving %1$s</string>
+    <string name="transfer_sent">Sent %1$s</string>
+    <string name="transfer_received">Received %1$s</string>
+    <string name="transfer_failed">Could not transfer %1$s</string>
+    <string name="transfer_to">To %1$s</string>
+    <string name="transfer_from">From %1$s</string>
+    <string name="transfer_from_saved">From %1$s · saved to Downloads</string>
+    <string name="settings_clipboard_sharing">Share clipboard with computers</string>
+    <string name="settings_clipboard_sharing_detail">Text you copy on a computer appears on this phone, and text copied here is sent when you open the app. Passwords marked sensitive are never sent.</string>
+    <string name="home_send_files">Send files</string>
+    <string name="home_send_clipboard">Clipboard</string>
+    <string name="home_clipboard_sent">Clipboard sent to %1$s</string>
+    <string name="home_clipboard_empty">The clipboard has no text to send</string>
+    <string name="find_phone_channel">Find my phone</string>
+    <string name="find_phone_title">Your computer is looking for this phone</string>
+    <string name="find_phone_text">Tap Found it to stop the ringing.</string>
+    <string name="find_phone_found">Found it</string>
+    <string name="settings_mirror_notifications">Show phone notifications on computers</string>
+    <string name="settings_mirror_notifications_detail">Notifications appear on connected computers with their buttons and reply. Needs notification access; keeps computers connected in the background (Find my phone, files, clipboard).</string>
+    <string name="settings_notification_access">Allow notification access</string>
+    <string name="settings_notification_access_granted">Notification access allowed</string>
+    <string name="remote_title">Remote</string>
+    <string name="remote_tab_media">Media</string>
+    <string name="remote_tab_touchpad">Touchpad</string>
+    <string name="remote_tab_presenter">Presenter</string>
+    <string name="remote_album_art">Album art</string>
+    <string name="remote_seek">Playback position</string>
+    <string name="remote_previous">Previous</string>
+    <string name="remote_next">Next</string>
+    <string name="remote_play_pause">Play or pause</string>
+    <string name="remote_mute">Mute</string>
+    <string name="remote_volume">Computer volume</string>
+    <string name="remote_unknown_title">Unknown title</string>
+    <string name="remote_nothing_playing">Nothing is playing on %1$s</string>
+    <string name="remote_touchpad_hint">Slide to move · tap to click · two fingers to scroll</string>
+    <string name="remote_left_click">Left</string>
+    <string name="remote_right_click">Right</string>
+    <string name="remote_key_left">Left arrow</string>
+    <string name="remote_key_right">Right arrow</string>
+    <string name="remote_key_up">Up arrow</string>
+    <string name="remote_key_down">Down arrow</string>
+    <string name="remote_next_slide">Next</string>
+    <string name="remote_previous_slide">Previous</string>
+    <string name="remote_start_show">Start</string>
+    <string name="remote_black_screen">Black</string>
+    <string name="remote_end_show">End</string>
+    <string name="remote_laser">Hold and point</string>
+    <string name="remote_presenter_hint">Volume buttons also change slides. Hold the pointer button and aim the phone to move the pointer.</string>
+    <string name="home_remote">Remote</string>
+    <string name="action_back">Back</string>
+    <string name="second_display_name">Second screen</string>
+    <string name="uplink_channel">Phone to computer</string>
+    <string name="uplink_screen_active">Mirroring this phone to %1$s</string>
+    <string name="uplink_camera_active">Camera in use by %1$s</string>
+    <string name="uplink_stop">Stop</string>
+    <string name="mirror_control_label">enzimOS Remote: control from computer</string>
+    <string name="mirror_control_description">Lets a paired computer tap, scroll and type on this phone while its screen is mirrored there. Used only while mirroring.</string>
+    <string name="settings_max_bitrate_detail">A ceiling: streams use far less while little changes on screen.</string>
+    <string name="settings_max_bitrate_value">%1$d Mbit/s</string>
+    <string name="settings_section_phone">Phone and computers</string>
+    <string name="settings_sms_sharing">Text messages on computers</string>
+    <string name="settings_sms_sharing_detail">Read and send this phone\'s SMS from the Messages window on paired computers. Needs SMS permission; contacts permission shows names. Picture messages (MMS) are not included.</string>
+    <string name="app_settings_controller">On-screen controller</string>
+    <string name="app_settings_controller_hint">A game controller over the app: sticks, d-pad and buttons. The computer sees an Xbox-style gamepad. Controllers connected to this phone work too.</string>
+    <string name="app_settings_controller_size">Controller size</string>
+    <string name="app_settings_controller_opacity">Controller opacity</string>
+    <string name="controller_layout_edit">Edit layout</string>
+    <string name="controller_layout_done">Done</string>
+    <string name="controller_layout_reset">Reset</string>
+    <string name="controller_layout_hint">Drag controls to move them</string>
+    <string name="gamepad_connected">%1$s connected as a controller</string>
+    <string name="mirror_screen">Mirror</string>
+    <string name="stop_mirroring">Stop mirror</string>
+    <string name="use_as_webcam">Webcam</string>
+    <string name="stop_webcam">Stop webcam</string>
+    <string name="mirror_control_prompt_title">Control from the computer?</string>
+    <string name="mirror_control_prompt">To tap and type on this phone from the computer\'s window, turn on \"enzimOS Remote: control from computer\" in Accessibility. Mirroring works without it.</string>
+    <string name="open_settings">Open settings</string>
+    <string name="not_now">Not now</string>
+    <string name="webcam_hint">Webcam on: in video apps on the computer, pick the camera ending in “(enzimOS Remote)”.</string>
+    <string name="mirror_hint">Mirroring: this screen shows in a window on the computer.</string>
+    <string name="home_second_screen">Extend</string>
+</resources>

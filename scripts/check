@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -euo pipefail
+root=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
+cd "$root"
+./gradlew --no-daemon --max-workers=2 :app:testDebugUnitTest :app:assembleDebug "$@"
+# Release compiler and test JVMs before lint starts its worker.
+exec ./gradlew --no-daemon --max-workers=2 :app:lintDebug "$@"

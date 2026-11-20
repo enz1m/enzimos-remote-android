@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- enzremote Material 3 color scheme (light) -->
+    <!-- Generated from seed #6750A4 (Material purple) tuned for a remote desktop app -->
+
+    <!-- Status colors -->
+    <color name="status_connected">#2E7D32</color>
+    <color name="status_connecting">#F9A825</color>
+    <color name="status_disconnected">#757575</color>
+    <color name="status_error">#C62828</color>
+
+    <!-- Stream overlay -->
+    <color name="overlay_background">#B3000000</color>
+    <color name="toolbar_text_secondary">#AAFFFFFF</color>
+    <color name="perf_overlay_bg">#CC000000</color>
+    <color name="perf_overlay_text">#AAFFAA</color>
+
+    <!-- App drawer -->
+    <color name="drawer_background">#FF1E1E22</color>
+    <color name="drawer_divider">#33FFFFFF</color>
+    <color name="drawer_hint_text">#88FFFFFF</color>
+</resources>

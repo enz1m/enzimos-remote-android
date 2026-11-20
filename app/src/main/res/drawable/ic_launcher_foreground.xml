@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Monitor/display frame -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M28,32 L80,32 Q84,32 84,36 L84,68 Q84,72 80,72 L28,72 Q24,72 24,68 L24,36 Q24,32 28,32 Z" />
+
+    <!-- Screen (inner) -->
+    <path
+        android:fillColor="#FF31438F"
+        android:pathData="M28,35 L80,35 L80,66 L28,66 Z" />
+
+    <!-- Monitor stand -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M48,72 L60,72 L60,76 L48,76 Z" />
+
+    <!-- Monitor base -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M42,76 L66,76 Q68,76 68,78 L68,79 Q68,80 66,80 L42,80 Q40,80 40,78 L40,79 Q40,76 42,76 Z" />
+
+    <!-- WiFi/streaming signal arcs (top-right of screen) -->
+    <!-- Outer arc -->
+    <path
+        android:fillColor="#FFBAC3FF"
+        android:strokeWidth="0"
+        android:pathData="M66,42 A12,12,0,0,1,66,54"
+        android:strokeColor="#FFBAC3FF"
+        android:strokeLineCap="round" />
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeWidth="2.5"
+        android:pathData="M62,44 A8,8,0,0,1,62,52"
+        android:strokeColor="#FFBAC3FF"
+        android:strokeLineCap="round" />
+
+    <!-- Middle arc -->
+    <path
+        android:fillColor="@android:color/transparent"
+        android:strokeWidth="2.5"
+        android:pathData="M66,42.5 A9.5,9.5,0,0,1,66,53.5"
+        android:strokeColor="#FFDEE0FF"
+        android:strokeLineCap="round" />
+
+    <!-- Dot at signal origin -->
+    <path
+        android:fillColor="#FFDEE0FF"
+        android:pathData="M60,48 m-2,0 a2,2,0,1,1,4,0 a2,2,0,1,1,-4,0" />
+
+    <!-- Play triangle (streaming indicator, center-left of screen) -->
+    <path
+        android:fillColor="#FFDEE0FF"
+        android:pathData="M38,44 L50,50.5 L38,57 Z" />
+
+</vector>

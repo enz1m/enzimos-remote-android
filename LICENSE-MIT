@@ -1,0 +1,87 @@
+MIT License
+
+Copyright (c) enzimOS Remote contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+Third-party components
+
+enzUI's own source, documentation, generated assets and screenshots are covered
+by the MIT grant above. Six parts of this tree are third-party work,
+redistributed under terms that grant does NOT override. Each entry names the
+licence text this repository ships for it and the document recording where it
+came from.
+
+1. Lucide icon assets, `crates/enzui-icons`, declared `MIT AND ISC`. The
+   bundled upstream Lucide SVGs are ISC and the Feather-derived subset is MIT;
+   the framework code, the generated icon manifest and the fallback asset are
+   MIT. Licence texts: `crates/enzui-icons/LICENSES/ISC.txt`,
+   `crates/enzui-icons/LICENSES/MIT.txt` and
+   `crates/enzui-icons/LICENSES/MIT-enzUI.txt`. Upstream commit and
+   per-portion split: `crates/enzui-icons/THIRD_PARTY.md`. Redistributing
+   the icon assets requires shipping those notices.
+
+2. cryoglyph fork, `vendor/cryoglyph`, declared `MIT OR Apache-2.0 OR Zlib`, at
+   the recipient's option. Licence texts: `vendor/cryoglyph/LICENSE-APACHE`,
+   `vendor/cryoglyph/LICENSE-MIT` and `vendor/cryoglyph/LICENSE-ZLIB`. The
+   committed tree is an altered version of upstream, which the Zlib option
+   requires be plainly marked and the Apache option requires be stated:
+   `vendor/cryoglyph/FORK.md` is that marking and names the upstream revision
+   the patches are a diff against. Upstream's own MIT text carries no copyright
+   line, so the holder is identified only through that provenance document.
+
+3. zbus snapshot, `vendor/zbus`, declared `MIT`, copyright Zeeshan Ali Khan and
+   zbus contributors. Licence text: `vendor/zbus/LICENSE`, the published
+   crates.io archive's own file, unmodified. Archive identity and the one
+   applied patch: `vendor/zbus/ENZUI_PATCH.md`.
+
+4. Arsenal test font,
+   `crates/enzui-widgets/tests/row_count_generation_font.ttf`, SIL Open
+   Font License 1.1, copyright 2012 The Arsenal Project Authors. Licence text:
+   `crates/enzui-widgets/tests/row_count_generation_font.OFL.txt`; the face
+   is loaded by `crates/enzui-widgets/tests/font_load_runtime.rs`. The
+   OFL forbids releasing the font under any other licence, so the MIT grant
+   above does not reach it: redistribution must keep the copyright notice and
+   the OFL text beside the file.
+
+5. Bounded Curl media source, `vendor/gst-curl`, an altered MIT-licensed subset
+   of GStreamer, copyright 2014 and 2017 British Broadcasting Corporation -
+   Research and Development; author Sam Hurst. Licence text: `vendor/gst-curl/LICENSE-MIT`.
+   Upstream commit, input hashes, alterations and carry/removal contract:
+   `vendor/gst-curl/README.md` and `vendor/gst-curl/UPSTREAM.json`.
+
+6. libarchive RAR test fixtures,
+   `crates/enzui-services/tests/fixtures/archive/libarchive`, BSD-2-Clause,
+   copyright Tim Kientzle and the libarchive contributors. Licence text:
+   `crates/enzui-services/tests/fixtures/archive/libarchive/LICENSE`, libarchive's
+   own `COPYING`. Source files and upstream names:
+   `crates/enzui-services/tests/fixtures/archive/README.md`.
+
+Outside this repository's source tree
+
+`vendor/iced` is a working checkout of the enzICED fork of iced
+(https://github.com/iced-rs/iced), which is MIT-licensed under its own
+copyright. It is git-ignored here and is not part of this repository's source
+tree; its licence travels with that checkout.
+
+Dependencies resolved from crates.io are not redistributed in this tree. Each
+one's licence is declared in its own package archive, which `Cargo.lock` pins by
+SHA-256.

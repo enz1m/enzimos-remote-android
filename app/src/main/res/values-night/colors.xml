@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- enzremote Material 3 color scheme (dark) -->
+
+    <!-- Status colors (brighter for dark backgrounds) -->
+    <color name="status_connected">#66BB6A</color>
+    <color name="status_connecting">#FFCA28</color>
+    <color name="status_disconnected">#9E9E9E</color>
+    <color name="status_error">#EF5350</color>
+</resources>

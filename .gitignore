@@ -1,0 +1,23 @@
+# Gradle
+.gradle/
+.kotlin/
+build/
+local.properties
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Signing
+*.jks
+*.keystore
+*.p12
+release/
+*.apk
+*.aab
+
+# OS
+.DS_Store
+Thumbs.db

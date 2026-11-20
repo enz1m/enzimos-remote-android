@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 theme. Dynamic color replaces these roles on Android 12+
+         devices that support it; the generated palette is the fallback. -->
+    <style name="Base.Theme.Enzremote" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/m3_primary</item>
+        <item name="colorOnPrimary">@color/m3_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/m3_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/m3_onPrimaryContainer</item>
+        <item name="colorSecondary">@color/m3_secondary</item>
+        <item name="colorOnSecondary">@color/m3_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/m3_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/m3_onSecondaryContainer</item>
+        <item name="colorTertiary">@color/m3_tertiary</item>
+        <item name="colorOnTertiary">@color/m3_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/m3_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/m3_onTertiaryContainer</item>
+        <item name="colorError">@color/m3_error</item>
+        <item name="colorOnError">@color/m3_onError</item>
+        <item name="colorErrorContainer">@color/m3_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/m3_onErrorContainer</item>
+        <item name="colorOnBackground">@color/m3_onBackground</item>
+        <item name="colorSurface">@color/m3_surface</item>
+        <item name="colorOnSurface">@color/m3_onSurface</item>
+        <item name="colorSurfaceVariant">@color/m3_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/m3_onSurfaceVariant</item>
+        <item name="colorOutline">@color/m3_outline</item>
+        <item name="colorOutlineVariant">@color/m3_outlineVariant</item>
+        <item name="colorSurfaceDim">@color/m3_surfaceDim</item>
+        <item name="colorSurfaceBright">@color/m3_surfaceBright</item>
+        <item name="colorSurfaceContainerLowest">@color/m3_surfaceContainerLowest</item>
+        <item name="colorSurfaceContainerLow">@color/m3_surfaceContainerLow</item>
+        <item name="colorSurfaceContainer">@color/m3_surfaceContainer</item>
+        <item name="colorSurfaceContainerHigh">@color/m3_surfaceContainerHigh</item>
+        <item name="colorSurfaceContainerHighest">@color/m3_surfaceContainerHighest</item>
+        <item name="android:colorBackground">@color/m3_background</item>
+        <item name="colorSurfaceInverse">@color/m3_inverseSurface</item>
+        <item name="colorOnSurfaceInverse">@color/m3_inverseOnSurface</item>
+        <item name="colorPrimaryInverse">@color/m3_inversePrimary</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">@bool/light_system_bars</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Enzremote.Dialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Enzremote.BottomSheet</item>
+        <item name="shapeAppearanceCornerLarge">@style/ShapeAppearance.Enzremote.Large</item>
+    </style>
+
+    <style name="Theme.Enzremote" parent="Base.Theme.Enzremote" />
+
+    <style name="ThemeOverlay.Enzremote.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered" />
+
+    <style name="ThemeOverlay.Enzremote.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="ShapeAppearance.Enzremote.Large" parent="ShapeAppearance.Material3.Corner.Large">
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="Theme.Enzremote.Stream" parent="Theme.Enzremote">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">?attr/colorSurface</item>
+    </style>
+
+    <!-- Fullscreen camera/scanner theme. -->
+    <!-- Share sheet target: only its bottom sheet is visible. -->
+    <style name="Theme.Enzremote.Translucent" parent="Theme.Enzremote">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.Enzremote.Fullscreen" parent="Theme.Enzremote">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>
