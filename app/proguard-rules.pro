@@ -1,8 +1,12 @@
 # enzremote ProGuard/R8 rules
 
-# Keep WebRTC JNI classes
 -keep class org.webrtc.** { *; }
 -dontwarn org.webrtc.**
+
+# WebRTC looks up this JNI Zero entry point by name during native library loading.
+-keep class org.jni_zero.JniZero {
+    private static java.lang.Object[] init();
+}
 
 # Keep kotlinx.serialization
 -keepattributes *Annotation*, InnerClasses
