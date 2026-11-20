@@ -4,6 +4,14 @@ Use your phone to open apps or view the desktop on a paired enzimOS computer.
 You can also send files, share clipboard text, and forward phone notifications.
 The computer runs the [Phone Link host](https://github.com/enz1m/enzimos-phone-link).
 
+<table>
+  <tr>
+    <td align="center"><a href="docs/screenshots/launcher.png"><img src="docs/screenshots/launcher.png" width="210" alt="Paired computer and enzimOS app icons"></a><br><sub>App launcher</sub></td>
+    <td align="center"><a href="docs/screenshots/calculator.png"><img src="docs/screenshots/calculator.png" width="210" alt="Calculator with a calculation history in a phone-sized stream"></a><br><sub>Calculator</sub></td>
+    <td align="center"><a href="docs/screenshots/text.png"><img src="docs/screenshots/text.png" width="210" alt="Text showing a sample Markdown document in a phone-sized stream"></a><br><sub>Text</sub></td>
+  </tr>
+</table>
+
 ## Pair a computer
 
 1. On the computer, open **Settings → Phone Link** and turn on the service.
